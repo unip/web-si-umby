@@ -100,3 +100,25 @@
   .text-justify {
     text-align: justify;
   }
+
+a {
+  text-decoration: none;
+}
+
+.tanggal-post {
+  float: right;
+  font-size: smaller;
+}
+
+.img-baseline {
+  vertical-align: baseline;
+}
+
+.img-ml {
+  margin-left: 15px;
+}
+
+.meta {
+  margin-bottom: 1em;
+  color: grey;
+}
