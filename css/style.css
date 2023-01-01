@@ -123,3 +123,29 @@ a {
   margin-bottom: 1em;
   color: grey;
 }
+
+.meta a {
+  color: gray;
+}
+
+.meta a:hover {
+  color : rgb(28, 120, 226);
+}
+
+.more a{
+  color : rgb(28, 120, 226);
+  text-align: center;
+  margin: 2em auto;
+  display: block;
+  padding: 0.4em;
+  border: 1px solid rgb(28, 120, 226);
+  border-radius: 0.5em;
+}
+
+.more a:hover{
+  border: 1px solid gray;
+  color : white;
+  background-color: rgb(28, 120, 226);
+  text-align: center;
+
+}
