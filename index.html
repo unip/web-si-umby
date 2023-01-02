@@ -14,53 +14,75 @@
 
 <body>
   <!-- Navbar -->
-  <div class="bg-primary">
+  <nav class="navbar bg-primary sticky-top top-0 navbar-expand-lg navbar-dark bg-primary shadow">
     <div class="container">
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="Logo" height="60" class="d-inline-block align-text-top">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Beranda</a></li>
-              <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Prodi</a></li>
-              <li class="nav-item"><a class="nav-link" href="profile.html">Profil</a></li>
-              <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
-              <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <a class="navbar-brand" href="/">
+        <img src="images/logo.png" alt="Logo" height="60" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Prodi</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </nav>
   <!-- /Navbar -->
 
   <!-- Carousel/Hero -->
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="2000">
+      <div class="carousel-item active">
         <img src="images/gambar-1.jpg" class="d-block w-100" alt="Gambar 1">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center align-items-md-start">
+          <h1 class="text-start">Selamat <br> Datang</h3>
+          <p>Program Studi Sistem Informasi</p>
+        </div>
       </div>
-      <div class="carousel-item" data-bs-interval="2000">
+      <div class="carousel-item">
         <img src="images/gambar-2.jpg" class="d-block w-100" alt="Gambar 2">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center align-items-md-start">
+          <h1 class="text-start">Selamat <br> Datang</h3>
+          <p>Program Studi Sistem Informasi</p>
+        </div>
       </div>
       <div class="carousel-item">
         <img src="images/gambar-3.jpg" class="d-block w-100" alt="Gambar 3">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center align-items-md-start">
+          <h1 class="text-start">Selamat <br> Datang</h3>
+          <p>Program Studi Sistem Informasi</p>
+        </div>
       </div>
       <div class="carousel-item">
         <img src="images/gambar-4.jpg" class="d-block w-100" alt="Gambar 3">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column align-items-center align-items-md-start">
+          <h1 class="text-start">Selamat <br> Datang</h3>
+          <p>Program Studi Sistem Informasi</p>
+        </div>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
@@ -76,32 +98,32 @@
       </div>
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/simedis.jpg" class="card-img-top" alt="SI Medis">
+          <div class="card rounded-0 border-0 shadow">
+            <img src="images/simedis.jpg" class="card-img-top rounded-0" alt="SI Medis">
             <div class="card-body">
               <p class="card-text text-center">Sistem Informasi Medis</p>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/simobile.jpg" class="card-img-top" alt="SI Mobile Multimedia">
+          <div class="card rounded-0 border-0 shadow">
+            <img src="images/simobile.jpg" class="card-img-top rounded-0" alt="SI Mobile Multimedia">
             <div class="card-body">
               <p class="card-text text-center">Sistem Informasi Mobile Multimedia</p>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/siakuntansi.jpg" class="card-img-top" alt="SI Akuntansi">
+          <div class="card rounded-0 border-0 shadow">
+            <img src="images/siakuntansi.jpg" class="card-img-top rounded-0" alt="SI Akuntansi">
             <div class="card-body">
               <p class="card-text text-center">Sistem Informasi Akuntansi</p>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/simanajemen.jpg" class="card-img-top" alt="SI Manajemen">
+          <div class="card rounded-0 border-0 shadow">
+            <img src="images/simanajemen.jpg" class="card-img-top rounded-0" alt="SI Manajemen">
             <div class="card-body">
               <p class="card-text text-center">Sistem Informasi Manajemen</p>
             </div>
@@ -121,35 +143,59 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/fti-got-talent-32.jpg" class="card-img-top" alt="SI Medis">
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card berita flex-col flex-lg-row">
+            <img src="images/fti-got-talent-32.jpg" class="card-img-top rounded-0" alt="SI Medis">
             <div class="card-body">
-              <p class="card-text text-center"><a class="info" href="berita/fti-got-talent.html">FTI UMBY Adakan Workshop FTI Got Talent</a></p>
+              <h5 class="card-text mb-3">
+                <a class="info stretched-link" href="berita/fti-got-talent.html">
+                  FTI UMBY Adakan Workshop FTI Got Talent
+                </a>
+              </h5>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ea tempora optio odit eaque placeat necessitatibus asperiores facere enim! Vel?</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/umby-unikl-32.jpg" class="card-img-top" alt="SI Mobile Multimedia">
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card berita flex-col flex-lg-row">
+            <img src="images/umby-unikl-32.jpg" class="card-img-top rounded-0" alt="SI Mobile Multimedia">
             <div class="card-body">
-              <p class="card-text text-center"><a class="info" href="berita/umby-unikl.html">Kolaborasi dengan UniKL MIIT, FTI UMBY Gelar Kuliah Umum</a></p>
+              <h5 class="card-text mb-3">
+                <a class="info stretched-link" href="berita/umby-unikl.html">
+                  Kolaborasi dengan UniKL MIIT, FTI UMBY Gelar Kuliah Umum
+                </a>
+              </h5>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ea tempora optio odit eaque placeat necessitatibus asperiores facere enim! Vel?</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/guru-slb-editing-video-32.jpg" class="card-img-top" alt="SI Akuntansi">
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card berita flex-col flex-lg-row">
+            <img src="images/guru-slb-editing-video-32.jpg" class="card-img-top rounded-0" alt="SI Akuntansi">
             <div class="card-body">
-              <p class="card-text text-center"><a class="info" href="berita/guru-slb-editing-video.html">Tim PkM UMBY Ajari Guru SLB Muhammadiyah Gamping Editing</a></p>
+              <h5 class="card-text mb-3">
+                <a class="info stretched-link" href="berita/guru-slb-editing-video.html">
+                  Tim PkM UMBY Ajari Guru SLB Muhammadiyah Gamping Editing
+                </a>
+              </h5>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ea tempora optio odit eaque placeat necessitatibus asperiores facere enim! Vel?</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/pawon-bocah-32.jpg" class="card-img-top" alt="SI Manajemen">
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card berita flex-col flex-lg-row">
+            <img src="images/pawon-bocah-32.jpg" class="card-img-top rounded-0" alt="SI Manajemen">
             <div class="card-body">
-              <p class="card-text text-center"><a class="info" href="berita/pawon-bocah.html">PKM Mercu Buana Inisiasi Pendirian Pawon Bocah</a></p>
+              <h5 class="card-text mb-3">
+                <a class="info stretched-link" href="berita/pawon-bocah.html">
+                  PKM Mercu Buana Inisiasi Pendirian Pawon Bocah
+                </a>
+              </h5>
+
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ea tempora optio odit eaque placeat necessitatibus asperiores facere enim! Vel?</p>
             </div>
           </div>
         </div>

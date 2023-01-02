@@ -7,7 +7,65 @@
  * - Abdurrahman Hanifatullah S. P. (211210075)
  * 
  * Copyright 2022 - License: CC BY 4.0
- */
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 3rem;
+}
+
+#carouselExampleInterval {
+  margin-bottom: 8rem;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+.carousel-item h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-item .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+section {
+  margin-bottom: 8rem;
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0;
+  transition: all 300ms ease;
+}
+
+.card:not(.berita) {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.card:hover {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.card.berita {
+  height: 100%;
+}
+
+.card.berita img {
+  width: 200px;
+  object-fit: cover;
+}
 
  .hovereffect {
   width:100%;
@@ -17,6 +75,10 @@
   position:relative;
   text-align:center;
   cursor:default;
+  }
+
+  .hovereffect img {
+    object-fit: cover;
   }
   
   .hovereffect .overlay {
@@ -159,4 +221,19 @@ a {
 
 .accordion-body {
   color: gray;
+}
+
+@media (max-width: 375px) {
+  .carousel-item img {
+    height: 50vh;
+  }
+
+  .carousel-item h1 {
+    text-align: center !important;
+    font-size: 2rem;
+  }
+
+  .card img {
+    width: 100% !important;
+  }
 }
