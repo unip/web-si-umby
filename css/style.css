@@ -259,3 +259,11 @@ a {
     rgba(255,255,255,0) 100%
  );
 }
+
+.accordion {
+  z-index: 0;
+}
+
+.fh {
+  height: 45px;
+}
