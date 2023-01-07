@@ -13,33 +13,29 @@
 
 <body>
   <!-- Navbar -->
-  <div class="bg-primary">
+  <nav class="navbar bg-primary sticky-top top-0 navbar-expand-lg navbar-dark bg-primary shadow">
     <div class="container">
-      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="../images/logo.png" alt="Logo" height="60" class="d-inline-block align-text-top">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
-              <li class="nav-item"><a class="nav-link" href="../tentang.html">Tentang Prodi</a></li>
-              <li class="nav-item"><a class="nav-link" href="../profile.html">Profil</a></li>
-              <li class="nav-item"><a class="nav-link active" aria-current="page" href="../berita.html">Berita</a></li>
-              <li class="nav-item"><a class="nav-link" href="../kontak.html">Kontak</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <a class="navbar-brand" href="/">
+        <img src="../images/logo.png" alt="Logo" height="60" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="../tentang.html">Tentang Prodi</a></li>
+          <li class="nav-item"><a class="nav-link" href="../profile.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../berita.html">Berita</a></li>
+          <li class="nav-item"><a class="nav-link" href="../kontak.html">Kontak</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </nav>
   <!-- /Navbar -->
 
   <!-- Breadcrumb -->
-  <nav aria-label="breadcrumb" class="bg-light bc-shadow mb-5">
+  <nav aria-label="breadcrumb" class="bg-light bc-shadow mb-5 sticky-top t-b">
     <div class="container">
       <ol class="breadcrumb pt-2 pb-2">
         <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
@@ -57,10 +53,13 @@
         <img class="rounded mb-3 mx-auto d-block" src="../images/.jpg" height="400" />
         <!-- /Gambar -->
         <!-- Judul Artikel   -->
-        <h2></h2>
-        <div class="meta"><img class="img-baseline" src="../images/calendar.png" height="12" alt="posted-at"> 5 Desember
-          2022 <img class="img-baseline img-ml" src="../images/user.png" height="12" alt="pengirim"> Wuri Handayani
+        <div class="sticky-top t-t"> 
+          <h2 class="mb-0"></h2>
+          <div class="meta"><img class="img-baseline" src="../images/calendar.png" height="12" alt="posted-at"> 5 Desember
+            2022 <img class="img-baseline img-ml" src="../images/user.png" height="12" alt="pengirim"> Wuri Handayani
+          </div>
         </div>
+
 
         <!-- /Judul Artikel   -->
         <!-- Konten -->

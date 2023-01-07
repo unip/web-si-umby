@@ -237,3 +237,25 @@ a {
     width: 100% !important;
   }
 }
+
+.t-b {
+  top: 87px;
+}
+
+.t-s {
+  top: 87px;
+}
+
+.t-t {
+  top: 120px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom, 
+    rgba(255,255,255,1) 0%,
+    rgba(255,255,255,1) 75%,
+    rgba(255,255,255,0) 100%
+ );
+}
