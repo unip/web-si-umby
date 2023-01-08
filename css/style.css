@@ -267,3 +267,12 @@ a {
 .fh {
   height: 45px;
 }
+
+.farback {
+  z-index: -99;
+}
+
+.pf {
+  height: 200px;
+  width: 160px;
+}
