@@ -276,3 +276,7 @@ a {
   height: 200px;
   width: 160px;
 }
+
+.bt-1 {
+  border-top: 1px solid #ddd !important;
+}
