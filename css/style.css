@@ -291,3 +291,9 @@ a {
 .bt-1 {
   border-top: 1px solid #ddd !important;
 }
+
+     .jumbotron-image {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
